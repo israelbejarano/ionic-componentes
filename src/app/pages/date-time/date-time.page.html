@@ -1,0 +1,13 @@
+<app-header titulo="datetime"></app-header>
+
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+            <ion-label>Datos de nacimiento</ion-label>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>Fecha de nacimiento</ion-label>
+            <ion-datetime placeholder="Nacimiento" value="{{fechaNaci | date: 'yyyy-MM-dd'}}" display-format="YYYY MMMM DD" cancelText="Cancelar" [(ngModel)]="fechaNaci" (ionChange)="cambioFecha($event)"></ion-datetime>
+        </ion-item>
+    </ion-list>
+</ion-content>
