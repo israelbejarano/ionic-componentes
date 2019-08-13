@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Avatar Page</ion-title>
+        <ion-buttons slot="end">
+            <ion-avatar>
+                <img src="/assets/avatar.png">
+            </ion-avatar>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-chip color="primary" *ngFor="let i of [1,1,1,1,1,1]; let contador = index">
+        <ion-avatar>
+            <img src="/assets/avatar.png">
+        </ion-avatar>
+        <ion-label>U {{contador + 1}}</ion-label>
+    </ion-chip>
+    <ion-list>
+        <ion-item *ngFor="let i of [1,1,1,1,1,1,1,1,1]; let contador = index">
+            <ion-avatar slot="start">
+                <img src="/assets/avatar.png">
+            </ion-avatar>
+            <ion-label>Usuario {{contador + 1}}</ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>
